@@ -1,3 +1,392 @@
-*{
-    border: 1px solid red;
+* {
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #A3A656;
+    height: 70px;
+    padding-left: 70px;
+    padding-right: 1rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 1rem;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a{
+    display: flex;
+    height: 100%;
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav ul li a:hover{
+    color: #FFFF00;
+}
+
+
+nav ul li a:link{
+    color: black;
+}
+
+.contenedorPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.contenedorPerfil div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    
+}
+
+.contenedorPerfil div * {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size:14px;
+    font-weight: 400;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.presentacion img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.nombrePagina{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    z-index: 2;
+    width: fit-content;
+}
+
+.nombrePagina h1{
+    font-family: "Romanesco", cursive;
+    font-weight: 400;
+    font-size: 96px;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.nombrePagina p{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+.barraOpciones {
+    background-color: #F2F6F6;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+.barraOpciones span{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.opciones{
+    display: flex;
+    column-gap: 2rem;
+    padding: 1.25rem 0;
+}
+
+.opciones div{
+    height: 100%;
+}
+
+.barraOpciones input{
+    border: 0px;
+    height: 100%;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.barraOpciones input::placeholder{
+    color: #9E9A9A;
+    font-size: 16px;
+}
+
+.barraOpciones span{
+    margin-right: 1rem;
+}
+
+.barraOpciones div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservaCita {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.ingresarCodigo {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.menuMasajes {
+    display: flex;
+    justify-content: center;
+    column-gap: 134px;
+    padding: 100px 0px 50px 0px;
+}
+
+
+.tarjetaOpcionMasaje{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tarjetaOpcionMasaje h3{
+    margin: 0;
+    padding: 0;
+    border-radius: 15px 15px 0 0 ;
+    background-color: #A3A656;
+    text-align: center;
+    padding: 1rem;
+    color:#F2F6F6;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.encabezado p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.informacionOpcion{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+
+.informacionOpcion div{
+    display: flex;
+    align-items: center;
+    padding: 1px 1.5rem;
+    background-color: #A3A656;
+    border-radius: 35px;
+    color: #F2F6F6;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.informacionOpcion div:hover{
+    background-color: #384001;
+    transition: ease-out;
+}
+
+.informacionOpcion span{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.membresias {
+    height: 770px;
+    background-color: #F2F6F6;
+    padding-left: 6rem;
+    padding-right: 4rem;
+}
+
+.membresias h2{
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.menuMembresias {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 10px solid black;
+    width: 233px;
+    height: 233px;
+
+    border-radius: 50%;
+
+    background-color:#fff
+}
+
+.contenedorImagen img {
+    width: min-content;
+    height: min-content;
+}
+
+.tarjetaMembresia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 255px;
+}
+
+.tarjetaMembresia h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 2rem;
+}
+
+
+.botonCondiciones {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 35px;
+    background-color: #A3A656;
+    color: #F2F6F6;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.botonCondiciones:hover{
+    background-color: #384001;
+    transition: ease-out;
+}
+
+.tarjetaMembresia ul{
+    padding: 0;
+}
+
+.tarjetaMembresia ul li{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 7px 0;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 97px;
+    text-align: center;
+    padding: 5px;
+    background-color: #384001;
+    color: #A3A656;
+    padding-left: 70px;
+    padding-right: 2rem;
+}
+
+footer ul {
+    font-family: Menu;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer ul li {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer div{
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 10rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div a{
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+footer div a:hover{
+    color: #FFFF00;
+}
+
+footer div img{
+    width: min-content;
+    height: min-content;
+}
+
+a, a:visited, a:active, a:hover, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer ul li a:hover{
+    color: #FFFF00;
 }

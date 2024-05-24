@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola mundo</title>
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>PROMOCIONES</li>
-            <li>FOTOS</li>
-            <li>SERVICIOS</li>
-            <li>MAPA</li>
-            <li>CONTACTO</li>
-        </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">PROMOCIONES</a></li>
+                <li><a href="index.html">FOTOS</a></li>
+                <li><a href="index.html">SERVICIOS</a></li>
+                <li><a href="index.html">MAPA</a></li>
+                <li><a href="index.html">CONTACTO</a></li>
+            </ul>
+        </nav>
 
-
-        <div>
-            <div class="">
+        <div class="contenedorPerfil">
+            <div>
                 <img src="materia_tarea_spa\material_tarea\images\user.png" alt="imagen de usuario">
                 <span>Mi cuenta</span>
             </div>
@@ -30,105 +37,117 @@
                 <img src="materia_tarea_spa\material_tarea\images\arrow.png" alt="flecha hacia abajo">
             </div>
         </div>
+    </header>
 
-    </nav>
-
-    <div>
-        <h1>SPA - Jodos</h1>
-        <p>Regálate un momento de paz y consiente a tu piel en el mejor lugar</p>
-    </div>
-    <div>
-        <div>
-            <span>RESERVA TU CITA:</span>
-            <div></div>
-        </div>
-        <div>
-            <span>CÓDIGO PROMOCIONAL:</span>
-            <div></div>
+    <div class="presentacion">
+        <img src="materia_tarea_spa\material_tarea\images\main.png" alt="imagen de presentacion">
+        <div class="nombrePagina">
+            <h1>SPA - Jodos</h1>
+            <p>Regálate un momento de paz y<br>consiente a tu piel en el mejor lugar</p>
         </div>
     </div>
-    <div class="menu">
-        <div class="tarjetaOpcion">
+    <div class="barraOpciones">
+        <div class="opciones">
             <div>
-                <h3>Masaje de pies</h3>
-                <img src="materia_tarea_spa\material_tarea\images\pies.png" alt="imagen de pies siendo masajeados">
-                <p>Esta es una descripcion de la opción en cuestión .....</p>
+                <span>RESERVA TU CITA:</span>
+                <input type="text" class="reservaCita">
             </div>
             <div>
+                <span>CÓDIGO PROMOCIONAL:</span>
+                <input type="text" placeholder="CODIGO" class="ingresarCodigo">
+            </div>
+        </div>
+    </div>
+    <div class="menuMasajes">
+        <div class="tarjetaOpcionMasaje">
+            <div class="encabezado">
+                <h3>Masaje de pies</h3>
+                <img src="materia_tarea_spa\material_tarea\images\pies.png" alt="imagen de pies siendo masajeados">
+                <p>Esta es una descripcion de la opción en <br> cuestión .....</p>
+            </div>
+            <div class="informacionOpcion">
                 <span>$65</span>
                 <div>RESERVAR</div>
             </div>
         </div>
-        <div class="tarjetaOpcion">
-            <div>
+        <div class="tarjetaOpcionMasaje">
+            <div class="encabezado">
                 <h3>Masaje relajante</h3>
                 <img src="materia_tarea_spa\material_tarea\images\relajante.png"
                     alt="imagen de señora siendo masajeada">
-                <p>Esta es una descripcion de la opción en cuestión .....</p>
+                <p>Esta es una descripcion de la opción en <br> cuestión .....</p>
             </div>
-            <div>
+            <div class="informacionOpcion">
                 <span>$60</span>
                 <div>RESERVAR</div>
             </div>
         </div>
-        <div class="tarjetaOpcion">
-            <div>
+        <div class="tarjetaOpcionMasaje">
+            <div class="encabezado">
                 <h3>Masaje con banbú</h3>
                 <img src="materia_tarea_spa\material_tarea\images\bambu.png"
                     alt="imagen de un masaje de espalda realizado con un palo de bambú">
-                <p>Esta es una descripcion de la opción en cuestión .....</p>
+                <p>Esta es una descripcion de la opción en <br> cuestión .....</p>
             </div>
-            <div>
+            <div class="informacionOpcion">
                 <span>$58</span>
                 <div>RESERVAR</div>
             </div>
         </div>
     </div>
-    <div class="menuMembresias">
+    <div class="membresias">
         <h2>Haste socio y prueba nuestros beneficios</h2>
-        <div class="tarjetaMembresia">
-            <img src="materia_tarea_spa\material_tarea\images\gold.png" alt="imagen de logo membresia gold">
-            <h3>GOLD</h3>
-            <div>Ver condiciones</div>
-            <ul>
-                <li>Gimnasio</li>
-                <li>Piscina</li>
-                <li>Todos los tratamientos</li>
-            </ul>
-        </div>
-        <div class="tarjetaMembresia">
-            <img src="materia_tarea_spa\material_tarea\images\premium.png" alt="imagen de logo membresia premium">
-            <h3>PREMIUM</h3>
-            <div>Ver condiciones</div>
-            <ul>
-                <li>Gimnasio</li>
-                <li>Todos los tratamientos</li>
-            </ul>
-        </div>
-        <div class="tarjetaMembresia">
-            <img src="materia_tarea_spa\material_tarea\images\plate.png" alt="imagen de logo membresia plate">
-            <h3>PLATE</h3>
-            <div>Ver condiciones</div>
-            <ul>
-                <li>Tratamientos faciales</li>
-            </ul>
+        <div class="menuMembresias">
+            <div class="tarjetaMembresia">
+                <div class="contenedorImagen">
+                    <img src="materia_tarea_spa\material_tarea\images\gold.png" alt="imagen de logo membresia gold">
+                </div>
+                <h3>GOLD</h3>
+                <div class="botonCondiciones">VER CONDICIONES</div>
+                <ul>
+                    <li>Gimnasio</li>
+                    <li>Piscina</li>
+                    <li>Todos los tratamientos</li>
+                </ul>
+            </div>
+            <div class="tarjetaMembresia">
+                <div class="contenedorImagen">
+                    <img src="materia_tarea_spa\material_tarea\images\premium.png"
+                        alt="imagen de logo membresia premium">
+                </div>
+                <h3>PREMIUM</h3>
+                <div class="botonCondiciones">VER CONDICIONES</div>
+                <ul>
+                    <li>Gimnasio</li>
+                    <li>Todos los tratamientos</li>
+                </ul>
+            </div>
+            <div class="tarjetaMembresia">
+                <div class="contenedorImagen">
+                    <img src="materia_tarea_spa\material_tarea\images\plate.png" alt="imagen de logo membresia plate">
+                </div>
+                <h3>PLATE</h3>
+                <div class="botonCondiciones">VER CONDICIONES</div>
+                <ul>
+                    <li>Tratamientos faciales</li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer>
         <ul>
-            <li>POLITICAS DE COOKIES</li>
-            <li>AVISO LEGAL</li>
-            <li>PROTECCION DE DATOS</li>
-            <li>MAPA DEL SITIO</li>
+            <li><a href="index.html">POLITICAS DE COOKIES</a></li>
+            <li><a href="index.html">AVISO LEGAL</a></li>
+            <li><a href="index.html">PROTECCION DE DATOS</a></li>
+            <li><a href="index.html">MAPA DEL SITIO</a></li>
         </ul>
         <div>
-            <span>SIGUIENDO EN</span>
+            <a href="index.html">SÍGUENOS EN</a>
             <img src="materia_tarea_spa\material_tarea\images\rs_facebook.png" alt="imagen de logo de facebook">
             <img src="materia_tarea_spa\material_tarea\images\rs_twiter.png" alt="imagen de logo de twiter">
             <img src="materia_tarea_spa\material_tarea\images\rs_youtube.png" alt="imagen de logo de youtube">
         </div>
     </footer>
-
 </body>
 
 </html>
