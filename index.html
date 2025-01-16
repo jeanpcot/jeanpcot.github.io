@@ -2,47 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean Cotera</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDYMVVTKHP"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-
-    <title>Jean Cotera</title>
+    gtag('config', 'G-PDYMVVTKHP');
+  </script>
 </head>
 
+
 <body>
-    <header class="header">
-        <a href="#" class="logo">Jean.</a>
-        <nav class="navbar">
-            <a href="#" class="active">Inicio</a>
-        </nav>
-    </header>
+  <script src="main.js"></script>
 
-    <section class="home">
-        <div class="home-content">
-            <h1>Hola, soy Jean Cotera</h1>
-            <h3>Estudiante de Ingenieria en Software</h3>
-            <p>Cursando el 7mo semestre en la Escuela Politecnica Nacional.<br> De Manabi, Ecuador 🇪🇨.</p>
-            <div class="btn-box">
-                <a href="https://epnecuador-my.sharepoint.com/:b:/g/personal/jean_cotera_epn_edu_ec/EWPAP7QIZeFDu9HNmFXM3DQBGPuqThrx-kM_gX48E-KqcQ?e=FgqJpn">Descargar CV</a>
-                <a href="https://www.linkedin.com/in/jean-cotera/">Contactame +</a>
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <a href="#">
+          <div class="name_logo">Jean Cotera</div>
+        </a>
+      </div>
+
+      <div class="nav-bar">
+        <ol>
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="color3-s-button">
+              Get in Touch
+            </a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INTRO SECTION -->
+    <div class="introBox">
+      <div class="introBox-text">
+        <h1>hello!</h1>
+        <p>I'm Jean, and I currently attend EPN for software engineering.</p>
+        <p>Welcome to my portfolio 🚀</p>
+      </div>
+      <div class="introbox-contactIcons">
+        <a class="contactIcon" target="_blank" href="https://www.linkedin.com/in/jean-cotera/"><img
+            src="assets/inlinked.svg"></a>
+        <a class="contactIcon" target="_blank" href="https://github.com/jeanpcot"><img src="assets/github.svg"></a>
+      </div>
+      <div class="introbox-CTA">
+        <a class="color3-t-button" href="#projects">View Projects</a>
+        <a class="color3-s-button" href="#contact">Let's Chat :)</a>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="about" class="aboutMe">
+      <h1> about me </h1>
+      <p>
+        Hello! My name is Jean, and I enjoy solving problems.
+        <br>
+        <br>
+        My passion for solving problems began with my childhood fascination for arts and crafts. This love for
+        creativity
+        and using my imagination has shaped my approach to finding innovative solutions by drawing inspiration from the
+        world around me.
+        <br>
+        <br>
+        Over time, my interests have evolved towards engineering, where I focus on developing impactful, market-oriented
+        products. For instance, I had the opportunity to participate in the "Hult Prize" at EPN, where my team and I
+        reached the semifinals with a prototype application designed to simplify sports field reservations in Quito
+        while
+        helping users find additional players for their games. The idea aimed to expand nationwide and eventually across
+        the Americas.
+      </p>
+
+    </div>
+    <!-- INTERESTS -->
+    <div class="interests">
+      <h1>
+        interests
+      </h1>
+      <p>
+        Some things I enjoy learning about and doing :)
+      </p>
+      <div class="interestsGrid">
+        <div class="interestsGrid-card">SOFTWARE DEVELOPMENT</div>
+        <div class="interestsGrid-card">HUMAN-CENTRED DESIGN</div>
+        <div class="interestsGrid-card">ARTIFICIAL INTELLIGENCE</div>
+        <div class="interestsGrid-card">UI/UX</div>
+        <div class="interestsGrid-card">CI/CD</div>
+        <div class="interestsGrid-card">
+          <img src="assets/game_of_chess.jpg">
+          <div class="interestsGrid-overlay">CHESS ♟️</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="projects">
+      <h1> projects </h1>
+      <p>
+        Some of my projects and experiences
+      </p>
+      <div class="projects-list">
+        <div class="project-picL-card"> <!--aero software-->
+          <img class="project-pic" loading="lazy" src="assets/money_manager.jpeg">
+          <div class="project-contents">
+            <div class="project-text">
+              <h3>UNIVERSITY PROJECT</h3>
+              <h2>Money Manager</h2>
+              <p>
+                The development team carried out the entire software development lifecycle to create a web application
+                that enables quick and easy financial transaction tracking. The backend was implemented using Java, with
+                an SQL database, and the frontend utilized HTML, CSS, and JavaScript.
             </div>
+            <div class="project-buttons">
+              <div class="project-skills">
+                <div class="tooltip"><img class="skillIcon" src="assets/java.svg"><span class="tooltiptext">Java</span>
+                </div>
+                <div class="tooltip"><img class="skillIcon" src="assets/html5.svg"><span class="tooltiptext">HTML</span>
+                </div>
+                <div class="tooltip"><img class="skillIcon" src="assets/css.svg"><span class="tooltiptext">CSS</span>
+                </div>
+                <div class="tooltip"><img class="skillIcon" src="assets/javascript.svg"><span
+                    class="tooltiptext">JavaScript</span>
+                </div>
+                <div class="tooltip"><img class="skillIcon" src="assets/mysql.svg"><span
+                    class="tooltiptext">MySQL</span></div>
+                <div class="tooltip"><img class="skillIcon" src="assets/star_uml.avif"><span class="tooltiptext">Star
+                    UML</span></div>
+                <div class="tooltip"><img class="skillIcon" src="assets/git.svg"><span class="tooltiptext">Git</span>
+                </div>
+              </div>
+              <div class="project-CTA-group">
+
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div class="project-picR-card">
+          <img class="project-pic" loading="lazy" src="assets/pixelcut-export (1).jpeg">
+          <div class="project-contents">
+            <div class="project-text">
+              <h3>HULT PRIZE</h3>
+              <h2>Find friends and play</h2>
+              <p>
+                In the "Hult Prize" at EPN, my team developed a prototype for an application designed to help users book
+                sports fields in Quito while also addressing the issue of finding additional players to complete a game.
+                The concept aimed to expand to other locations in Ecuador and, if successful, scale to the rest of the
+                Americas. We reached the semifinals with our innovative idea.
+            </div>
+            <div class="project-buttons">
+              <div class="project-skills">
+                <div class="tooltip"><img class="skillIcon" src="assets/figma-c.svg"><span
+                    class="tooltiptext">Figma</span></div>
+              </div>
 
-        <div class="home-sci">
-            <a href="https://github.com/jeanpcot"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/jean-cotera/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
         </div>
 
-        <div class="home-img">
-            <img src="images/Foto_perfil_sin_fondo.png">
+        <div class="project-picL-card"> <!--aero software-->
+          <img class="project-pic" loading="lazy" src="assets/ecommerce.jpeg">
+          <div class="project-contents">
+            <div class="project-text">
+              <h3>UNIVERSITY PROJECT</h3>
+              <h2>E-commerce of videogames</h2>
+              <p>
+                The project was developed by my team using agile methodologies, with Azure DevOps as the platform for
+                hosting the web page, the database server, continuous integration, and continuous deployment. We created
+                user stories, tracked task progress, and completed a release over four sprints.
+            </div>
+            <div class="project-buttons">
+              <div class="project-skills">
+                <div class="tooltip"><img class="skillIcon" src="assets/html5.svg"><span class="tooltiptext">HTML</span>
+                </div>
+                <div class="tooltip"><img class="skillIcon" src="assets/css.svg"><span class="tooltiptext">CSS</span>
+                </div>
+                <div class="tooltip"><img class="skillIcon" src="assets/logo-mysql.jpg"><span
+                    class="tooltiptext">MySQL</span></div>
+                <div class="tooltip"><img class="skillIcon" src="assets/azure-devops.svg"><span
+                    class="tooltiptext">Azure DevOps</span></div>
+                <div class="tooltip"><img class="skillIcon" src="assets/apache-tomcat.svg"><span
+                    class="tooltiptext">Apache Tomcat</span></div>
+                <div class="tooltip"><img class="skillIcon" src="assets/git.svg"><span class="tooltiptext">Git</span>
+                </div>
 
+              </div>
+              <div class="project-CTA-group">
+
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <footer></footer>
+      </div>
+    </div>
+
+    <!-- GET IN TOUCH -->
+    <div id="contact" class="getInTouch">
+      <h1>get in touch</h1>
+      <p>I’m currently open to new opportunities, my inbox is always open!</p>
+      <div class="getInTouch-contactIcons">
+        <a class="contactIcon" target="_blank" href="mailto:amandayyang15@gmail.com"><img src="assets/mail.svg" width:
+            100%></a>
+        <a class="contactIcon" target="_blank" href="https://www.linkedin.com/in/amandayyang15/"><img
+            src="assets/inlinked.svg" style="display: flex !important;"></a>
+        <a class="contactIcon" target="_blank" href="https://github.com/amandayyang15"><img src="assets/github.svg"></a>
+
+      </div>
+    </div>
+  </main>
 </body>
+
+<footer>
+  <div class="foot">
+    <div class="nav-bar"><a href="#">HOME</a></div>
+    <div class="nav-bar"><a href="#about">ABOUT</a></div>
+    <div class="nav-bar"><a href="#projects">PROJECTS </a></div>
+    <div class="nav-bar"><a href="#contact">GET IN TOUCH</a></div>
+  </div>
+</footer>
 
 </html>
